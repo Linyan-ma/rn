@@ -1,5 +1,8 @@
-import Demo from '../views/Demo';
-import Welcome from '../views/Welcome';
+import Demo from '../views/Demo'
+import Home from '../views/Home'
+
+import Welcome from '../views/Welcome'
+import TabNavigator from '../views/TabNavigator'
 
 const Screen = [
   {
@@ -7,8 +10,19 @@ const Screen = [
     component: Demo,
   },
   {
+    name: 'Home',
+    component: Home,
+  },
+  {
     name: 'Welcome',
     component: Welcome,
   },
-];
-export default Screen;
+  {
+    name: 'TabNavigator',
+    component: TabNavigator,
+    options: {
+      headerShown: false,
+    },
+  },
+]
+export default Screen
